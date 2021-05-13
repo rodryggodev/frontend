@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Css</title>
+		<style>
+			#box{
+				background-color: pink;
+				color: #fff;
+				font-weight: bold;
+				padding: 30px;
+				
+			}
+			/*pegando div 2 div3 e div4*/
+			div:nth-child(2){
+				background: #907fa4
+			}
+
+			div:nth-child(3){
+				background: #a58faa
+			}
+			div:nth-child(4){
+				background: #a7bbc7
+			}
+
+			div#ne{
+				font-size: 16px;
+			}
+			
+			div#ne > p{
+				font-size: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			Texto
+		</div>
+
+		<div>
+			#907fa4
+		</div>
+
+		<div>
+			#fff
+		</div>
+
+		<div>
+			#000
+		</div>
+			
+		<div id="ne">
+			Texto XTPY
+			<p>Texto Xpto</p>
+		</div>
+	</body>
+</html>
