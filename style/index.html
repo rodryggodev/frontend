@@ -20,7 +20,7 @@
 				background: #a58faa
 			}
 			div:nth-child(4){
-				background: #a7bbc7
+				background: #a58faa;
 			}
 
 			div#ne{
@@ -35,6 +35,7 @@
 				text-align: center;
 				box-shadow: 7px 5px 5px #542e71;
 				border-radius: 15px;
+				border-top: 15px solid red;
 			}
 				/*
 					 aqui é um de cada vez ou um para todos
@@ -47,11 +48,66 @@
 
 			/*Display Visibilidade*/
 			p{
+				display: block;
 				color: red;
+			}
+			ul.lista >li {
+				display: inline;
+				padding: 10px;
+				border-bottom: 9px solid red;
+			}
+
+			/*position*/
+			
+			.container{
+				background: blueviolet;
+				color: white;
+				margin: 40px;
+				height: 150px;
+				position: relative;
+			}	
+
+			/* position relativa */
+			.filho-relativo{
+				background: red;
+				position: relative;
+				top: 10px;
+				left: 20px;
+				bottom: 20px;
+				right: 50px;
+
+				width: 120px;
+
+			}
+
+			/* position absolute */
+			.filho-absolute{
+				background: orange;
+				position: absolute;
+				
+				top: 100px;
+				right: 10px;
+
+				width: 110px;
+			}
+
+			/* position fixed*/  
+			.fixed{
+				font-size: 45px;
+				color: black;
+				background: red;
+
+				position: fixed;
+				top: 20px;
+				z-index: 99;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="fixed">
+			Logo
+		</div>
+
 		<div id="box">
 			Texto
 		</div>
@@ -78,5 +134,26 @@
 		<p class="exp-3">Texto</p>
 		<p class="exp-3">Texto</p>
 
+		<ul class="lista">
+			<li>Home</li>
+			<li>Sobre</li>
+			<li>Produtos</li>
+		</ul>
+
+		<div class="container">
+			Texto1
+			<div class="filho-relativo">
+				Texto2
+			</div>
+			Texto3
+		</div>
+
+		<div class="container">
+			Text1
+			<div class="filho-absolute">  
+				Texto2
+			</div>
+			Texto3
+		</div>
 	</body>
 </html>
